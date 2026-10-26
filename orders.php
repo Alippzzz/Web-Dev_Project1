@@ -112,7 +112,7 @@ ob_start();
                         <td>(555) 123-4567</td>
                         <td>2023-01-15</td>
                         <td>
-                            <a href="order_details.php" class="btn btn-sm btn-info text-white" title="Order details">
+                            <a href="orderdetails.php" class="btn btn-sm btn-info text-white" title="Order details">
                                 <i class="bi bi-list"></i>
                             </a>
                             <a href="invoice.php" class="btn btn-sm btn-success" title="View invoice">
