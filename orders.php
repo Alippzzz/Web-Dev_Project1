@@ -1,17 +1,17 @@
 <?php
 ob_start();
 ?>
- 
+
 <div class="card shadow border-0 border-start border-5 border-primary mb-4">
     <div class="card-body">
         <h2 class="mb-1">Orders</h2>
         <p class="text-muted mb-0">Manage and track all your orders</p>
     </div>
 </div>
- 
+
 <div class="card shadow-sm mb-4">
     <div class="card-body">
- 
+
         <div class="row g-0 align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
@@ -24,17 +24,20 @@ ob_start();
                 <span class="badge bg-primary">* Required fields</span>
             </div>
         </div>
-         
+
         <hr>
- 
+
         <form action="" method="post" class="needs-validation" novalidate>
             <div class="row g-3">
                 <div class="col-md-3">
-                    <label for="date" class="form-label">Order Date<span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="date" id="date" type="date" class="form-control" placeholder="Enter Order Date"required>
+                    <label for="date" class="form-label">Order Date<span class="text-danger"
+                            aria-hidden="true">*</span></label>
+                    <input name="date" id="date" type="date" class="form-control" placeholder="Enter Order Date"
+                        required>
                 </div>
                 <div class="col-md-3">
-                    <label for="staff_num" class="form-label">Staff<span class="text-danger" aria-hidden="true">*</span></label>
+                    <label for="staff_num" class="form-label">Staff<span class="text-danger"
+                            aria-hidden="true">*</span></label>
                     <select name="staff_num" id="staff_num" class="form-control" required>
                         <option value="">Select Staff</option>
                         <option value="S001">John Doe</option>
@@ -42,27 +45,19 @@ ob_start();
                     </select>
                 </div>
                 <div class="col-md-3">
-                    <label for="customer_num" class="form-label">Customer<span class="text-danger" aria-hidden="true">*</span></label>
+                    <label for="customer_num" class="form-label">Customer<span class="text-danger"
+                            aria-hidden="true">*</span></label>
                     <select name="customer_num" id="customer_num" class="form-control" required>
                         <option value="">Select Customer</option>
                         <option value="C001">Alice Johnson</option>
                         <option value="C002">Bob Williams</option>
                     </select>
                 </div>
- 
-                <div class="col-md-3">
-                    <label for="customer_phone" class="form-label">Phone Number<span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="customer_phone" id="customer_phone" type="text" class="form-control" placeholder="Enter Phone Number" value="" required>
-                </div>
-                                    <!-- Subject to change ^ and v -->
-                <div class="col-md-3">
-                    <label for="customer_register_date" class="form-label">Register Date<span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="customer_register_date" id="customer_register_date" type="date" class="form-control" required>
-                </div>
 
-                </div>
+                <!-- Subject to change ^ and v -->
+            </div>
             <hr class="mt-4 mb-3">
-             
+
             <div>
                 <button type="submit" name="create" class="btn btn-primary">
                     <i class="bi bi-save me-1"></i>Create
@@ -74,10 +69,10 @@ ob_start();
         </form>
     </div>
 </div>
- 
+
 <div class="card shadow-sm">
     <div class="card-body">
-  
+
         <div class="row align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
@@ -90,9 +85,9 @@ ob_start();
                 <span class="badge bg-success">Total: 1 items</span>
             </div>
         </div>
- 
+
         <hr>
- 
+
         <div class="table-responsive">
             <table class="table table-striped table-hover">
                 <thead class="table-dark">
@@ -107,10 +102,10 @@ ob_start();
                 <tbody>
                     <tr>
                         <td>S001</td>
-                        <td>Jacob Doe</td>
-                        <td>jacob.doe@example.com</td>
-                        <td>(555) 123-4567</td>
                         <td>2023-01-15</td>
+                        <td>Jacob Doe</td>
+                        <td>John Doe</td>
+
                         <td>
                             <a href="orderdetails.php" class="btn btn-sm btn-info text-white" title="Order details">
                                 <i class="bi bi-list"></i>

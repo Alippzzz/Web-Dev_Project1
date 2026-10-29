@@ -1,7 +1,7 @@
 <?php
 ob_start();
 ?>
- 
+
 <div class="card shadow border-0 border-start border-5 border-primary mb-4">
     <div class="card-body">
         <div class="row align-items-center">
@@ -10,17 +10,18 @@ ob_start();
                 <p class="text-muted mb-0">Order #O001</p>
             </div>
             <div class="col-auto">
-                <button type="button" class="btn btn-primary"><i class="bi bi-printer me-1" onclick="window.print()"></i>Print</button>
+                <button type="button" class="btn btn-primary"><i class="bi bi-printer me-1"
+                        onclick="window.print()"></i>Print</button>
             </div>
         </div>
     </div>
 </div>
- 
+
 <div class="card shadow-sm">
     <div class="card-body p-4">
         <div class="row mb-4">
             <div class="col-md-6">
-                <h4>My Company</h4>
+                <h4>HydroTech</h4>
                 <p class="text-muted mb-0">Sales Invoice</p>
             </div>
             <div class="col-md-6 text-md-end">
@@ -55,35 +56,43 @@ ob_start();
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Road Bike</td>
-                        <td>$1,200.00</td>
+                        <td>Plain RC Boat</td>
+                        <td>$120.00</td>
                         <td>1</td>
-                        <td class="text-end">$1,200.00</td>
+                        <td class="text-end">$120.00</td>
                     </tr>
-                    <tr><td colspan="5" class="text-center">No products added to this order</td></tr>
+                    <tr>
+                        <td colspan="5" class="text-center">No products added to this order</td>
+                    </tr>
                 </tbody>
-                <tfoot><tr><th colspan="4" class="text-end">Grand Total</th><th class="text-end">$1,200.00</th></tr></tfoot>
+                <tfoot>
+                    <tr>
+                        <th colspan="4" class="text-end">Grand Total</th>
+                        <th class="text-end">$120.00</th>
+                    </tr>
+                </tfoot>
             </table>
         </div>
         <a href="orderdetails.php" class="btn btn-secondary"><i class="bi bi-arrow-left me-1"></i>Back to Details</a>
     </div>
 </div>
- 
-<style>
-@media print {
-    #mySidebar,
-    #myBurger,
-    .btn {
-        display: none !important;
-    }
 
-    .card {
-        box-shadow: none !important;
-        border: none !important;
+<style>
+    @media print {
+
+        #mySidebar,
+        #myBurger,
+        .btn {
+            display: none !important;
+        }
+
+        .card {
+            box-shadow: none !important;
+            border: none !important;
+        }
     }
-}
 </style>
- 
+
 <?php
 $content = ob_get_clean();
 require_once 'layout.php';
