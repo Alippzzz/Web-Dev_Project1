@@ -1,17 +1,17 @@
 <?php
 ob_start();
 ?>
- 
+
 <div class="card shadow border-0 border-start border-5 border-primary mb-4">
     <div class="card-body">
         <h2 class="mb-1">Staff</h2>
         <p class="text-muted mb-0">Manage and track all your staff</p>
     </div>
 </div>
- 
+
 <div class="card shadow-sm mb-4">
     <div class="card-body">
- 
+
         <div class="row g-0 align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
@@ -24,37 +24,44 @@ ob_start();
                 <span class="badge bg-primary">* Required fields</span>
             </div>
         </div>
-         
+
         <hr>
- 
+
         <form action="" method="post" class="needs-validation" novalidate>
             <div class="row g-3">
                 <div class="col-md-3">
-                    <label for="staff_num" class="form-label">Staff ID<span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="staff_num" id="staff_num" type="text" class="form-control" placeholder="Enter Staff ID" value="" required>
+                    <label for="staff_num" class="form-label">Staff ID<span class="text-danger"
+                            aria-hidden="true">*</span></label>
+                    <input name="staff_num" id="staff_num" type="text" class="form-control" placeholder="Enter Staff ID"
+                        value="" required>
                 </div>
                 <div class="col-md-3">
-                    <label for="staff_name" class="form-label">Name<span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="staff_name" id="staff_name" type="text" class="form-control" placeholder="Enter Staff Name" value="" required>
+                    <label for="staff_name" class="form-label">Name<span class="text-danger"
+                            aria-hidden="true">*</span></label>
+                    <input name="staff_name" id="staff_name" type="text" class="form-control"
+                        placeholder="Enter Staff Name" value="" required>
                 </div>
                 <div class="col-md-3">
-                    <label for="staff_gender" class="form-label">Gender<span class="text-danger" aria-hidden="true">*</span></label>
+                    <label for="staff_gender" class="form-label">Gender<span class="text-danger"
+                            aria-hidden="true">*</span></label>
                     <select name="staff_gender" id="staff_gender" class="form-select" required>
                         <option value="">Select Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                     </select>
                 </div>
- 
+
                 <div class="col-md-3">
-                    <label for="staff_phone" class="form-label">Phone Number<span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="staff_phone" id="staff_phone" type="text" class="form-control" placeholder="Enter Phone Number" value="" required>
+                    <label for="staff_phone" class="form-label">Phone Number<span class="text-danger"
+                            aria-hidden="true">*</span></label>
+                    <input name="staff_phone" id="staff_phone" type="text" class="form-control"
+                        placeholder="Enter Phone Number" value="" required>
                 </div>
 
 
-                </div>
+            </div>
             <hr class="mt-4 mb-3">
-             
+
             <div>
                 <button type="submit" name="create" class="btn btn-primary">
                     <i class="bi bi-save me-1"></i>Create
@@ -66,10 +73,10 @@ ob_start();
         </form>
     </div>
 </div>
- 
+
 <div class="card shadow-sm">
     <div class="card-body">
-  
+
         <div class="row align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
@@ -79,21 +86,20 @@ ob_start();
                 <small class="text-muted">View and manage all staff</small>
             </div>
             <div class="col-auto">
-                <span class="badge bg-success">Total: 1 items</span>
+                <span class="badge bg-success">Total: 2 items</span>
             </div>
         </div>
- 
+
         <hr>
- 
+
         <div class="table-responsive">
             <table class="table table-striped table-hover">
                 <thead class="table-dark">
                     <tr>
                         <th>Staff ID</th>
                         <th>Name</th>
-                        <th>Email</th>
                         <th>Phone</th>
-                        <th>Register Date</th>
+                        <th>Email</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -101,9 +107,8 @@ ob_start();
                     <tr>
                         <td>S001</td>
                         <td>Jacob Doe</td>
-                        <td>jacob.doe@example.com</td>
                         <td>(555) 123-4567</td>
-                        <td>2023-01-15</td>
+                        <td>jacob.doe@example.com</td>
                         <td>
                             <a href="#" class="btn btn-sm btn-warning">
                                 <i class="bi bi-pencil"></i>
@@ -113,6 +118,18 @@ ob_start();
                             </a>
                         </td>
                     </tr>
+                    <td>S002</td>
+                    <td>Jane Smith</td>
+                    <td>(555) 987-6543</td>
+                    <td>jane.smith@example.com</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </td>
                     <tr>
                         <td colspan="6" class="text-center">No staff found</td>
                     </tr>

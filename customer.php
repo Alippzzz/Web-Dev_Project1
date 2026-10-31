@@ -91,7 +91,7 @@ ob_start();
                 <small class="text-muted">View and manage all customers</small>
             </div>
             <div class="col-auto">
-                <span class="badge bg-success">Total: 1 items</span>
+                <span class="badge bg-success">Total: 2 items</span>
             </div>
         </div>
 
@@ -103,7 +103,7 @@ ob_start();
                     <tr>
                         <th>Customer ID</th>
                         <th>Name</th>
-                        <th>Email</th>
+                        <th>Gender</th>
                         <th>Phone</th>
                         <th>Register Date</th>
                         <th>Actions</th>
@@ -113,7 +113,7 @@ ob_start();
                     <tr>
                         <td>C001</td>
                         <td>John Doe</td>
-                        <td>john.doe@example.com</td>
+                        <td>Male</td>
                         <td>(555) 123-4567</td>
                         <td>2023-01-15</td>
                         <td>
@@ -128,7 +128,7 @@ ob_start();
                     <tr>
                         <td>C002</td>
                         <td>Alice Johnson</td>
-                        <td>alice.johnson@example.com</td>
+                        <td>Female</td>
                         <td>(555) 987-6543</td>
                         <td>2023-01-16</td>
                         <td>
