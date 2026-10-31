@@ -16,7 +16,7 @@
         </a>
       </li>
       <li class="nav-item mb-3">
-        <a href="dashboard.php" class="text-decoration-none text-white">
+        <a href="home.php#dashboard" class="text-decoration-none text-white">
           <i class="bi bi-bar-chart-line-fill me-2"></i>
           Dashboard
         </a>
