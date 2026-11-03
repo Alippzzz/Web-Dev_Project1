@@ -60,27 +60,24 @@ ob_start();
                 </div>
 
                 <div class="col-md-3">
-                    <label for="product_condition" class="form-label">Condition <span class="text-danger"
+                    <label for="product_specification" class="form-label">Specifications<span class="text-danger"
                             aria-hidden="true">*</span></label>
-                    <select name="product_condition" id="product_condition" class="form-select" required>
-                        <option value="">Select Condition</option>
-                        <option value="New">New</option>
-                        <option value="Used">Used</option>
+                    <select name="product_specification" id="product_specification" class="form-select" required>
+                        <option value="">Select Specification</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Premium">Premium</option>
                     </select>
                 </div>
                 <!-- Subject to change ^ and v -->
                 <div class="col-md-3">
-                    <label for="year" class="form-label">Manufacturing Year <span class="text-danger"
+                    <label for="product_material" class="form-label">Material <span class="text-danger"
                             aria-hidden="true">*</span></label>
-                    <select name="product_year" id="year" class="form-select" required>
-                        <option value="">Select Year</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
+                    <select name="product_material" id="product_material" class="form-select" required>
+                        <option value="">Select Material</option>
+                        <option value="Plastic">Plastic</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Aluminium">Aluminium</option>
+                        <option value="Titanium">Titanium</option>
                     </select>
                 </div>
 
